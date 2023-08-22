@@ -5,10 +5,12 @@
     <style>
         ul {
             list-style: none;
+            width: 50px;
         }
         
         li {
             margin: 5px 0;
+            
         }
         
         label {
@@ -25,6 +27,44 @@
     </header>
     
     <!-- insert form here -->
+    <section>
+        <h2>Login</h2>
+        <form action="/login">
+            <!-- inline-block elements don't start new lines -->
+            <fieldset>
+                <legend>Your Details</legend>
+                <ul>
+                    <li>
+                        <label>Username:</label>
+                        <!-- self closing tags have no content -->
+                        <br>
+                        <input type="text" name="username" placeholder="Enter username" autofocus>
+                        <br>
+                    </li>
+                    <li>
+                        <label>Surname:</label>
+                        <br>
+                        <input type="text" name="Surname" placeholder="Enter surname" required>
+                        <br>
+                    </li>
+                    <li>
+                        <label>Position/Role</label>
+                        <br>
+                        <input type="text" name="Surname" placeholder="Enter surname" required>
+                    </li>
+                    <li>
+                        <label>Email</label>
+                        <br>
+                        <input id="email" name="email" placeholder="you@domain.com" required>
+                        <br>
+                    </li>
+                </ul>
+            </fieldset>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     
 </body>
 </html>
